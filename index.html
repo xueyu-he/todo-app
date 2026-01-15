@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>To-Do App — Xueyu He</title>
+  <link rel="stylesheet" href="./todo.css" />
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="container">
+      <header class="top">
+        <div>
+          <h1>To-Do App</h1>
+          <p class="sub">HTML · CSS · JavaScript · LocalStorage</p>
+        </div>
+        <div class="pill">Frontend Project</div>
+      </header>
+
+      <main class="card">
+        <form id="form" class="row">
+          <input id="input" class="input" type="text" placeholder="Neue Aufgabe eingeben…" autocomplete="off" />
+          <button class="btn primary" type="submit">Add</button>
+        </form>
+
+        <div class="toolbar">
+  <div class="filters">
+    <button class="chip is-active" type="button" data-filter="all">All</button>
+    <button class="chip" type="button" data-filter="open">Open</button>
+    <button class="chip" type="button" data-filter="done">Done</button>
+  </div>
+
+  <div class="actions">
+    <span id="stats" class="pill">Open: 0 • Done: 0</span>
+    <button id="markAllDone" class="btn ghost" type="button">Mark All Done</button>
+    <button id="clearDone" class="btn ghost" type="button">Clear Done</button>
+    <button id="clearAll" class="btn ghost" type="button">Clear All</button>
+  </div>
+</div>
+
+
+        <ul id="list" class="list"></ul>
+
+        <div id="empty" class="empty">
+          Noch keine Aufgaben. ✨
+        </div>
+      </main>
+
+      <footer class="footer">
+        <span>© 2026 Xueyu He</span>
+        <span>Project: To-Do App</span>
+      </footer>
+    </div>
+  </div>
+
+  <script src="./todo.js"></script>
+</body>
+</html>
